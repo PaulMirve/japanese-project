@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import useLessonStyle from '../../../CustomHooks/lesson_styles';
 import { Grid, Divider, Typography } from '@material-ui/core';
+import examples from './desition_reasons_examples';
+import Example from '../../../CustomComponents/Example';
 
 export default function DesitionReasons() {
     const classes = useLessonStyle();
@@ -15,11 +17,14 @@ export default function DesitionReasons() {
             <p className={classes.subtitle}>Grámatica</p>
             <Divider />
             <div className={classes.grammarContainer}>
-                <Typography align='center' className={classes.description}>Motivo de la desición + kara + resultado de la desición</Typography>
+                <Typography align='center' className={classes.description}>Motivo de la desición + から + resultado de la desición</Typography>
             </div>
 
             <p className={classes.subtitle}>Ejemplos</p>
             <Divider />
+            {examples.map((example, index) => {
+                return <Example example={example.example} translation={example.translation} />
+            })}
         </Grid>
     )
 }

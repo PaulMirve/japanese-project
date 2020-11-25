@@ -43,8 +43,6 @@ export default function ImperativeForm() {
                     <VerbsCard title='Verbos del Grupo 3' verbs={negativeVerbs.groupTree} />
                 </Grid>
             </Grid>
-            <p className={classes.subtitle}>Ejemplos</p>
-            <Divider />
         </Grid>
     )
 }
