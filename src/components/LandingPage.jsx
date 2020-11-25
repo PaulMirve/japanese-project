@@ -10,7 +10,9 @@ const useStyles = makeStyles(theme => ({
     },
     btn: {
         fontWeight: 300,
-        margin: 5
+        margin: 5,
+        borderColor: '#00171F',
+        color: '#00171F'
     }
 }));
 

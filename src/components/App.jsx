@@ -13,11 +13,11 @@ const useStyles = makeStyles(theme => ({
     navTitle: {
         fontWeight: 500,
         fontSize: 18,
-        color: 'black'
+        color: 'white'
     },
     navButton: {
         fontWeight: 300,
-        color: 'black'
+        color: 'white'
     },
     sectionDesktop: {
         display: 'none',
@@ -34,7 +34,7 @@ export default function App() {
     const classes = useStyles();
     return (
         <>
-            <AppBar style={{ background: '#456e87' }} position='static'>
+            <AppBar style={{ background: '#003459' }} position='static'>
                 <Toolbar>
                     <div className={classes.grow}>
                         <Typography className={classes.navTitle}>

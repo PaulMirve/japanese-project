@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
         marginTop: 10
     },
     highlight: {
-        color: 'red',
+        color: '#007EA7',
         fontWeight: '800'
     }
 }));

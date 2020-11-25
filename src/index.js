@@ -5,7 +5,16 @@ import { Router } from 'react-router-dom';
 import history from './history';
 import 'normalize.css';
 
-document.body.style = 'background: #d8e1e9; font-family: Roboto, sans- serif';
+/**
+ * Color palette
+ * #FFFFFF
+ * #00171F
+ * #003459
+ * #007EA7
+ * #00A8E8
+ */
+
+document.body.style = 'background: #ffffff; font-family: Roboto, sans- serif';
 
 ReactDOM.render(
   <React.StrictMode>

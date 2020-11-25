@@ -10,7 +10,9 @@ const useStyles = makeStyles(themes => ({
     btn: {
         textTransform: 'none',
         fontWeight: 300,
-        marginTop: 10
+        marginTop: 10,
+        borderColor: '#00171F',
+        color: '#00171F'
     }
 }));
 
