@@ -47,7 +47,7 @@ export default function App() {
                     </div>
                 </Toolbar>
             </AppBar>
-            <div style={{ padding: 20 }}>
+            <div style={{ paddingLeft: 40, paddingRight: 40, paddingTop: 10, paddingBottom: 10 }}>
                 <Route exact path='/' component={LandingPage} />
                 <Route exact path='/lesson1' component={LessonOne} />
                 <Route exact path='/imperative-form' component={ImperativeForm} />

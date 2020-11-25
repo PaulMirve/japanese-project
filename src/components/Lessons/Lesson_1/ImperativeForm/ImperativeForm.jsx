@@ -1,55 +1,42 @@
 import React from 'react';
-import { makeStyles, Grid, Divider } from '@material-ui/core';
+import { Grid, Divider } from '@material-ui/core';
+import VerbsCard from '../../../CustomComponents/VerbsCard';
+import { positiveVerbs, negativeVerbs } from './imperative_form_verbs';
+import useLessonStyle from '../../../CustomHooks/lesson_styles';
 
-const useStyles = makeStyles(theme => ({
-    texts: {
-        fontFamily: 'Roboto, sans- serif',
-        fontWeight: 300
-    },
-    description: {
-        fontSize: 20,
-        fontFamily: 'Roboto, sans- serif',
-        fontWeight: 100
-    },
-    title: {
-        fontSize: 45,
-        fontFamily: 'Roboto, sans- serif',
-        fontWeight: 100
-    },
-    subtitle: {
-        fontSize: 30,
-        fontFamily: 'Roboto, sans- serif',
-        fontWeight: 100
-    },
-    headers: {
-        fontFamily: 'Roboto, sans- serif',
-        textAlign: 'center'
-    }
-}));
 
 export default function ImperativeForm() {
-    const classes = useStyles();
+    const classes = useLessonStyle();
 
     return (
         <Grid container direction='column'>
-            <p className={classes.title}>Forma  Imperativa</p>
+            <p className={classes.tit}>Forma  Imperativa</p>
             <Divider />
             <p className={classes.description}>Se utiliza para decir la forma imperativa del verbo.</p>
             <p className={classes.subtitle}>Grámatica</p>
             <Divider />
-            <p className={classes.description}>Para verbos del grupo 1, se sustituye la ultima silaba por su forma e.</p>
-            <Grid container>
+            <p className={classes.description}>Para verbos del grupo 1 la vocal /i/ de la forma-MASU se cambia por /e/. Verbos del grupo 2 se elimina -ます y se añade ろ. Se elimina -ます y se añade ろ. El verbo きます se convierte en こい.</p>
+            <Grid container spacing={5}>
                 <Grid item xs={4}>
-                    <p className={classes.headers}>Verbos del Grupo 1</p>
-                    <ul>
-                        <li>ganbaru -> ganbare</li>
-                    </ul>
+                    <VerbsCard title='Verbos del Grupo 1' verbs={positiveVerbs.groupOne} />
                 </Grid>
                 <Grid item xs={4}>
-                    <p className={classes.headers}>Verbos del Grupo </p>
+                    <VerbsCard title='Verbos del Grupo 2' verbs={positiveVerbs.groupTwo} />
                 </Grid>
                 <Grid item xs={4}>
-                    <p className={classes.headers}>Verbos del Grupo 3</p>
+                    <VerbsCard title='Verbos del Grupo 3' verbs={positiveVerbs.groupTree} />
+                </Grid>
+            </Grid>
+            <p className={classes.description}>Para la forma negativa se le agrega la silaba NA a la forma diccionario.</p>
+            <Grid container spacing={5}>
+                <Grid item xs={4}>
+                    <VerbsCard title='Verbos del Grupo 1' verbs={negativeVerbs.groupOne} />
+                </Grid>
+                <Grid item xs={4}>
+                    <VerbsCard title='Verbos del Grupo 2' verbs={negativeVerbs.groupTwo} />
+                </Grid>
+                <Grid item xs={4}>
+                    <VerbsCard title='Verbos del Grupo 3' verbs={negativeVerbs.groupTree} />
                 </Grid>
             </Grid>
         </Grid>
