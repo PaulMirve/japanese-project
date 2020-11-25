@@ -10,7 +10,7 @@ export default function ImperativeForm() {
 
     return (
         <Grid container direction='column'>
-            <p className={classes.tit}>Forma  Imperativa</p>
+            <p className={classes.title}>Forma  Imperativa</p>
             <Divider />
             <p className={classes.description}>Se utiliza para decir la forma imperativa del verbo.</p>
             <p className={classes.subtitle}>Grámatica</p>
