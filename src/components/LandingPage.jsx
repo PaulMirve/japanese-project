@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Grid, Button, makeStyles } from '@material-ui/core';
 import history from '../history';
 import imagen from '../static/img/study_school_jugyou_man.png';
@@ -26,7 +26,9 @@ const CustomButton = ({ children, color, onClick }) => {
 
 export default function LandingPage() {
     const classes = useStyles();
-
+    useEffect(() => {
+        document.title = 'Sexto Nivel';
+    });
     return (
         <Grid container>
             <Grid item xs={4}>

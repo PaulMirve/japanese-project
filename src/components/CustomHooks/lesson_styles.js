@@ -19,6 +19,13 @@ export default function useLessonStyles() {
         },
         headers: {
             textAlign: 'center'
+        },
+        grammarContainer: {
+            padding: 20,
+            background: '#B3C5D7',
+            borderRadius: 10,
+            marginTop: 10,
+            marginBottom: 10
         }
     }));
     return useStyles();
