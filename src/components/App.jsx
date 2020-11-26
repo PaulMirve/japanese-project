@@ -7,7 +7,7 @@ import history from '../history';
 import ImperativeForm from './Lessons/Lesson_1/ImperativeForm/ImperativeForm';
 import Troubles from './Lessons/Lesson_2/Troubles/Troubles';
 import DesitionReasons from './Lessons/Lesson_1/DesitionReasons/DesitionReasons';
-import ProsAndCons from './Lessons/Lesson_1/ProsAndCons/ProsAndCons';
+import ProsAndCons from './Lessons/Lesson_2/ProsAndCons/ProsAndCons';
 import LessonTwo from './Lessons/Lesson_2/LessonTwo';
 import LessonTree from './Lessons/Lesson_3/LessonTree';
 import LessonFour from './Lessons/Lesson_4/Lesson4';

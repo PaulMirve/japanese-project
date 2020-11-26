@@ -25,9 +25,9 @@ export default function LessonMenu({ lessonName, topics }) {
     return (
         <Grid container direction='column' alignContent='center'>
             <Typography align='center' className={classes.title}>{lessonName.toUpperCase()}</Typography>
-            {topics.map(topic => {
+            {topics.map((topic, index) => {
                 return (
-                    <Button onClick={() => history.push(topic.link)} variant='outlined' className={classes.btn}>
+                    <Button key={index} onClick={() => history.push(topic.link)} variant='outlined' className={classes.btn}>
                         {topic.name}
                     </Button>
                 );
