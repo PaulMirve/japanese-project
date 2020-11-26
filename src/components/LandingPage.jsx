@@ -35,14 +35,14 @@ export default function LandingPage() {
         <Grid container>
             <Grid item xs={4}>
                 <div>
-                    <CustomButton onClick={() => history.push('/lesson1')} color='green'>Lección 1</CustomButton>
-                    <CustomButton color='red'>Lección 2</CustomButton>
-                    <CustomButton color='blue'>Lección 3</CustomButton>
-                    <CustomButton color='yellow'>Lección 4</CustomButton>
-                    <CustomButton color='brown'>Lección 5</CustomButton>
-                    <CustomButton color='gray'>Lección 6</CustomButton>
-                    <CustomButton color='pink'>Lección 7</CustomButton>
-                    <CustomButton color='purple'>Lección 8</CustomButton>
+                    <CustomButton onClick={() => history.push('/lesson1')}>Lección 1</CustomButton>
+                    <CustomButton onClick={() => history.push('/lesson2')}>Lección 2</CustomButton>
+                    <CustomButton>Lección 3</CustomButton>
+                    <CustomButton>Lección 4</CustomButton>
+                    <CustomButton>Lección 5</CustomButton>
+                    <CustomButton>Lección 6</CustomButton>
+                    <CustomButton>Lección 7</CustomButton>
+                    <CustomButton>Lección 8</CustomButton>
                 </div>
 
             </Grid>
