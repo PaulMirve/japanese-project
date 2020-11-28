@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Grid, Button, makeStyles } from '@material-ui/core';
+import { Grid, Button, makeStyles, Hidden } from '@material-ui/core';
 import history from '../history';
 import imagen from '../static/img/study_school_jugyou_man.png';
 
@@ -33,11 +33,11 @@ export default function LandingPage() {
     });
     return (
         <Grid container>
-            <Grid item xs={4}>
+            <Grid item xs={12} md={4}>
                 <div>
                     <CustomButton onClick={() => history.push('/lesson1')}>Lección 1</CustomButton>
                     <CustomButton onClick={() => history.push('/lesson2')}>Lección 2</CustomButton>
-                    <CustomButton>Lección 3</CustomButton>
+                    <CustomButton onClick={() => history.push('/lesson3')}>Lección 3</CustomButton>
                     <CustomButton>Lección 4</CustomButton>
                     <CustomButton>Lección 5</CustomButton>
                     <CustomButton>Lección 6</CustomButton>
@@ -47,7 +47,10 @@ export default function LandingPage() {
 
             </Grid>
             <Grid item xs={8} className={classes.imgContainer}>
-                <img alt='studying' src={imagen} />
+                <Hidden mdDown>
+                    <img alt='studying' src={imagen} />
+                </Hidden>
+
             </Grid>
         </Grid>
     )

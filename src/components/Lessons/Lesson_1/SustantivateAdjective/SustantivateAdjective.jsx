@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Topic from '../../../CustomComponents/Topic';
 
 export default function SustantivateAdjective() {
-    return (
-        <div>
-            
-        </div>
-    )
+    const Grammar = () => {
+        return null;
+    }
+
+    const description = '';
+    return <Topic name="Sustantivar un adjetivo" grammar={Grammar} description={description} />
 }

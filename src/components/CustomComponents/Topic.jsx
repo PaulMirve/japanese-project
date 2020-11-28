@@ -3,7 +3,7 @@ import { Grid, Divider } from '@material-ui/core';
 import Example from './Example';
 import useLessonStyle from '../CustomHooks/lesson_styles';
 
-export default function Topic({ name, description, grammar, examples }) {
+export default function Topic({ name, description, grammar = () => { }, examples }) {
     const classes = useLessonStyle();
     useEffect(() => {
         document.title = name;
