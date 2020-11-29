@@ -3,8 +3,10 @@ import useLessonStyle from '../../../CustomHooks/lesson_styles';
 import { Typography } from '@material-ui/core';
 import examples from './desition_reasons_examples';
 import Topic from '../../../CustomComponents/Topic';
+import { nameDesitionReasons } from '../topics_list';
 
 export default function DesitionReasons() {
+    console.log("?");
     const classes = useLessonStyle();
     const Grammar = () => {
         return (
@@ -15,5 +17,5 @@ export default function DesitionReasons() {
     }
 
     const description = 'Podemos señalar el motivo de una descición utilizando esta forma.';
-    return <Topic name='Razones de una desición' grammar={Grammar} description={description} examples={examples} />
+    return <Topic name={nameDesitionReasons} grammar={Grammar} description={description} examples={examples} />
 }

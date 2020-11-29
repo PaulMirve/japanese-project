@@ -38,11 +38,12 @@ export default function LandingPage() {
                     <CustomButton onClick={() => history.push('/lesson1')}>Lección 1</CustomButton>
                     <CustomButton onClick={() => history.push('/lesson2')}>Lección 2</CustomButton>
                     <CustomButton onClick={() => history.push('/lesson3')}>Lección 3</CustomButton>
-                    <CustomButton>Lección 4</CustomButton>
-                    <CustomButton>Lección 5</CustomButton>
-                    <CustomButton>Lección 6</CustomButton>
-                    <CustomButton>Lección 7</CustomButton>
-                    <CustomButton>Lección 8</CustomButton>
+                    <CustomButton onClick={() => history.push('/lesson4')}>Lección 4</CustomButton>
+                    <CustomButton onClick={() => history.push('/lesson5')}>Lección 5</CustomButton>
+                    <CustomButton onClick={() => history.push('/lesson6')}>Lección 6</CustomButton>
+                    <CustomButton onClick={() => history.push('/lesson7')}>Lección 7</CustomButton>
+                    <CustomButton onClick={() => history.push('/lesson8')}>Lección 8</CustomButton>
+                    <CustomButton onClick={() => history.push('/lesson9')}>Lección 9</CustomButton>
                 </div>
 
             </Grid>
