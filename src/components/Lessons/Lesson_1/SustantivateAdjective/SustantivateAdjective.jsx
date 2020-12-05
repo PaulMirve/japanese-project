@@ -7,6 +7,6 @@ export default function SustantivateAdjective() {
         return null;
     }
 
-    const description = '';
+    const description = 'Se utiliza para sustantivar un adejtivo. Por ejemplo, si tenemos el adjetivo';
     return <Topic name={nameSustantivateAdjectives} grammar={Grammar} description={description} />
 }

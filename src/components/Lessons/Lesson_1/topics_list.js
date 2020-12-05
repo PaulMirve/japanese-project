@@ -16,7 +16,7 @@ const topics = [
     new Topic(nameImperativeForm, urlImperativeForm),
     new Topic(nameDesitionReasons, urlDesitionReasons),
     new Topic(nameSustantivateAdjectives, urlSustantivateAdjectives),
-    new Topic(nameSaySomethingSomeoneSaysToUs, urlSustantivateAdjectives),
+    new Topic(nameSaySomethingSomeoneSaysToUs, urlSaySomethingSomeoneSaysToUs),
     new Topic(nameTheTruthIs, urlTheTruthIs),
     new Topic(nameThingsWeHaveToDo, urlThingsWeHaveToDo)
 ];
