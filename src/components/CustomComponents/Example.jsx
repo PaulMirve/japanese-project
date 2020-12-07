@@ -14,6 +14,10 @@ const useStyles = makeStyles(theme => ({
     highlight: {
         color: '#00A8E8',
         fontWeight: '800'
+    },
+    secondHighlight: {
+        color: '#355691',
+        fontWeight: '800'
     }
 }));
 
@@ -27,7 +31,7 @@ export default function Example({ example, translation, audio }) {
                     <Typography>{first}</Typography>
                     <Typography className={classes.highlight}>{highlight}</Typography>
                     {second}
-                    <Typography className={classes.highlight}>{secondHighlight}</Typography>
+                    <Typography className={classes.secondHighlight}>{secondHighlight}</Typography>
                     {third}
                     <FontAwesomeIcon className={classes.arrowIcon} icon={faArrowRight} />
                     {translation}
