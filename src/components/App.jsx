@@ -2,12 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, makeStyles, Button, Link } from '@material-ui/core';
 import history from '../history';
-import LessonFive from './Lessons/Lesson_5/LessonFive';
 import LandingPage from './LandingPage';
-import { urlBolitiveForm, urlSomethingLooksLike, urlStriveForSomething } from './Lessons/Lesson_5/topics_list';
-import BolitiveForm from './Lessons/Lesson_5/BolitiveForm/BolitiveForm';
-import SomethingLooksLike from './Lessons/Lesson_5/SomethingLooksLike/SomethingLooksLike';
-import StriveForSomething from './Lessons/Lesson_5/StriveForSomething/StriveForSomething';
 import LessonSix from './Lessons/Lesson_6/LessonSix';
 import { urlConfirm, urlDoSomethingForSomeone, urlThingsWeThinkWillDOInTheFuture } from './Lessons/Lesson_6/topics_list';
 import Confirm from './Lessons/Lesson_6/Confirm/Confirm';
@@ -76,10 +71,6 @@ export default function App() {
                 {routes.map((route, index) => {
                     return <Route key={index} exact path={route.route} component={route.component} />
                 })}
-                <Route exact path='/lesson5' component={LessonFive} />
-                <Route exact path={urlBolitiveForm} component={BolitiveForm} />
-                <Route exact path={urlSomethingLooksLike} component={SomethingLooksLike} />
-                <Route exact path={urlStriveForSomething} component={StriveForSomething} />
                 <Route exact path='/lesson6' component={LessonSix} />
                 <Route exact path={urlConfirm} component={Confirm} />
                 <Route exact path={urlDoSomethingForSomeone} component={DoSomethingForSomeone} />

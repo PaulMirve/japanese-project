@@ -20,6 +20,11 @@ import DoesSomethingForSomeone from "./Lessons/Lesson_4/DoesSomethingForSomeone/
 import DoSomeFavor from "./Lessons/Lesson_4/DoSomeFavor/DoSomeFavor";
 import LessonFour from "./Lessons/Lesson_4/LessonFour";
 import { urlDoSomeFavor, urlSomeoneDoesSomethingForUs } from "./Lessons/Lesson_4/topics_list";
+import BolitiveForm from "./Lessons/Lesson_5/BolitiveForm/BolitiveForm";
+import LessonFive from "./Lessons/Lesson_5/LessonFive";
+import SomethingLooksLike from "./Lessons/Lesson_5/SomethingLooksLike/SomethingLooksLike";
+import StriveForSomething from "./Lessons/Lesson_5/StriveForSomething/StriveForSomething";
+import { urlBolitiveForm, urlSomethingLooksLike, urlStriveForSomething } from "./Lessons/Lesson_5/topics_list";
 
 const rutas = [
     { route: '/lesson1', component: LessonOne },
@@ -40,5 +45,9 @@ const rutas = [
     { route: '/lesson4', component: LessonFour },
     { route: urlSomeoneDoesSomethingForUs, component: DoesSomethingForSomeone },
     { route: urlDoSomeFavor, component: DoSomeFavor },
+    { route: '/lesson5', component: LessonFive },
+    { route: urlBolitiveForm, component: BolitiveForm },
+    { route: urlSomethingLooksLike, component: SomethingLooksLike },
+    { route: urlStriveForSomething, component: StriveForSomething },
 ];
 export default rutas;
