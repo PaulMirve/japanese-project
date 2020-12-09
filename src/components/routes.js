@@ -16,6 +16,10 @@ import LessonTree from "./Lessons/Lesson_3/LessonTree";
 import LooksLike from "./Lessons/Lesson_3/LooksLike/LooksLike";
 import NegativeAnswer from "./Lessons/Lesson_3/NegativeAnswer/NegativeAnswer";
 import { urlLooksLike, urlNegativeAnswer } from "./Lessons/Lesson_3/topics_list";
+import DoesSomethingForSomeone from "./Lessons/Lesson_4/DoesSomethingForSomeone/DoesSomethingForSomeone";
+import DoSomeFavor from "./Lessons/Lesson_4/DoSomeFavor/DoSomeFavor";
+import LessonFour from "./Lessons/Lesson_4/LessonFour";
+import { urlDoSomeFavor, urlSomeoneDoesSomethingForUs } from "./Lessons/Lesson_4/topics_list";
 
 const rutas = [
     { route: '/lesson1', component: LessonOne },
@@ -33,5 +37,8 @@ const rutas = [
     { route: '/lesson3', component: LessonTree },
     { route: urlLooksLike, component: LooksLike },
     { route: urlNegativeAnswer, component: NegativeAnswer },
+    { route: '/lesson4', component: LessonFour },
+    { route: urlSomeoneDoesSomethingForUs, component: DoesSomethingForSomeone },
+    { route: urlDoSomeFavor, component: DoSomeFavor },
 ];
 export default rutas;

@@ -2,14 +2,6 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, makeStyles, Button, Link } from '@material-ui/core';
 import history from '../history';
-import { urlLooksLike, urlNegativeAnswer } from './Lessons/Lesson_3/topics_list';
-import LooksLike from './Lessons/Lesson_3/LooksLike/LooksLike';
-import NegativeAnswer from './Lessons/Lesson_3/NegativeAnswer/NegativeAnswer';
-import { urlDoSomeFavor, urlSomeoneDoesSomethingForUs } from './Lessons/Lesson_4/topics_list';
-import DoesSomethingForSomeone from './Lessons/Lesson_4/DoesSomethingForSomeone/DoesSomethingForSomeone';
-import DoSomeFavor from './Lessons/Lesson_4/DoSomeFavor/DoSomeFavor';
-import LessonTree from './Lessons/Lesson_3/LessonTree';
-import LessonFour from './Lessons/Lesson_4/LessonFour';
 import LessonFive from './Lessons/Lesson_5/LessonFive';
 import LandingPage from './LandingPage';
 import { urlBolitiveForm, urlSomethingLooksLike, urlStriveForSomething } from './Lessons/Lesson_5/topics_list';
@@ -84,9 +76,6 @@ export default function App() {
                 {routes.map((route, index) => {
                     return <Route key={index} exact path={route.route} component={route.component} />
                 })}
-                <Route exact path='/lesson4' component={LessonFour} />
-                <Route exact path={urlSomeoneDoesSomethingForUs} component={DoesSomethingForSomeone} />
-                <Route exact path={urlDoSomeFavor} component={DoSomeFavor} />
                 <Route exact path='/lesson5' component={LessonFive} />
                 <Route exact path={urlBolitiveForm} component={BolitiveForm} />
                 <Route exact path={urlSomethingLooksLike} component={SomethingLooksLike} />
