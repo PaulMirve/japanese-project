@@ -30,6 +30,7 @@ import DoSomethingForSomeone from "./Lessons/Lesson_6/DoSomethingForSomeone/DoSo
 import LessonSix from "./Lessons/Lesson_6/LessonSix";
 import ThingsWeThinkWillDoInTheFuture from "./Lessons/Lesson_6/ThingsWeThinkWillDoInTheFuture/ThingsWeThinkWillDoInTheFuture";
 import { urlConfirm, urlDoSomethingForSomeone, urlThingsWeThinkWillDOInTheFuture } from "./Lessons/Lesson_6/topics_list";
+import LessonNine from "./Lessons/Lesson_9/LessonNine";
 
 const rutas = [
     { route: '/lesson1', component: LessonOne },
@@ -58,5 +59,6 @@ const rutas = [
     { route: urlDoSomethingForSomeone, component: DoSomethingForSomeone },
     { route: urlConfirm, component: Confirm },
     { route: urlThingsWeThinkWillDOInTheFuture, component: ThingsWeThinkWillDoInTheFuture },
+    { route: '/lesson9', component: LessonNine },
 ];
 export default rutas;
