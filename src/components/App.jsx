@@ -45,6 +45,7 @@ import DoSomethingWhileDoOtherThing from './Lessons/Lesson_8/DoSomethingWhileDoO
 import RememberWhatYouWhereDoing from './Lessons/Lesson_8/RememberWhatYouWhereDoing/RememberWhatYouWhereDoing';
 import TransitiveVerbs from './Lessons/Lesson_8/TransitiveVerbs/TransitiveVerbs';
 import ImperativeForm from './Lessons/Lesson_1/ImperativeForm/ImperativeForm';
+import routes from './routes';
 
 const useStyles = makeStyles(theme => ({
     navTitle: {
@@ -93,18 +94,9 @@ export default function App() {
             </AppBar>
             <div style={{ paddingLeft: 40, paddingRight: 40, paddingTop: 10, paddingBottom: 10 }}>
                 <Route exact path='/' component={LandingPage} />
-                <Route exact path='/lesson1' component={LessonOne} />
-                <Route exact path={urlImperativeForm} component={ImperativeForm} />
-                <Route exact path={urlDesitionReasons} component={DesitionReasons} />
-                <Route exact path={urlSaySomethingSomeoneSaysToUs} component={SaySomethingSomeoneSaysToUs} />
-                <Route exact path={urlSustantivateAdjectives} component={SustantivateAdjective} />
-                <Route exact path={urlTheTruthIs} component={TheThuthIs} />
-                <Route exact path={urlThingsWeHaveToDo} component={DesitionReasons} />
-                <Route exact path='/lesson2' component={LessonTwo} />
-                <Route exact path={urlConditional} component={Conditional} />
-                <Route exact path={urlEvenThough} component={EvenThough} />
-                <Route exact path={urlTroubles} component={Troubles} />
-                <Route exact path={urlProsAndCons} component={ProsAndCons} />
+                {routes.map((route, index) => {
+                    return <Route key={index} exact path={route.route} component={route.component} />
+                })}
                 <Route exact path='/lesson3' component={LessonTree} />
                 <Route exact path={urlLooksLike} component={LooksLike} />
                 <Route exact path={urlNegativeAnswer} component={NegativeAnswer} />
