@@ -1,5 +1,5 @@
 import Topic from "../../../models/Topic";
-export const nameBolitiveForm = 'Forma bolitiva';
+export const nameBolitiveForm = 'Forma volitiva';
 export const urlBolitiveForm = '/bolitive-form';
 export const nameSomethingLooksLike = "Parece que...";
 export const urlSomethingLooksLike = '/something-looks-like';
