@@ -2,24 +2,12 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, makeStyles, Button, Link } from '@material-ui/core';
 import history from '../history';
-import { urlDesitionReasons, urlImperativeForm, urlSaySomethingSomeoneSaysToUs, urlSustantivateAdjectives, urlTheTruthIs, urlThingsWeHaveToDo } from './Lessons/Lesson_1/topics_list';
-import DesitionReasons from './Lessons/Lesson_1/DesitionReasons/DesitionReasons';
-import SustantivateAdjective from './Lessons/Lesson_1/SustantivateAdjective/SustantivateAdjective';
-import SaySomethingSomeoneSaysToUs from './Lessons/Lesson_1/SaySomethingSomeoneSaysToUs/SaySomethingSomeoneSayToUs';
-import TheThuthIs from './Lessons/Lesson_1/TheTruthIs/TheTruthIs';
-import { urlConditional, urlEvenThough, urlProsAndCons, urlTroubles } from './Lessons/Lesson_2/topics_list';
-import ProsAndCons from './Lessons/Lesson_2/ProsAndCons/ProsAndCons';
-import Troubles from './Lessons/Lesson_2/Troubles/Troubles';
-import Conditional from './Lessons/Lesson_2/Conditional/Conditional';
-import EvenThough from './Lessons/Lesson_2/EvenThough/EvenThough';
 import { urlLooksLike, urlNegativeAnswer } from './Lessons/Lesson_3/topics_list';
 import LooksLike from './Lessons/Lesson_3/LooksLike/LooksLike';
 import NegativeAnswer from './Lessons/Lesson_3/NegativeAnswer/NegativeAnswer';
 import { urlDoSomeFavor, urlSomeoneDoesSomethingForUs } from './Lessons/Lesson_4/topics_list';
 import DoesSomethingForSomeone from './Lessons/Lesson_4/DoesSomethingForSomeone/DoesSomethingForSomeone';
 import DoSomeFavor from './Lessons/Lesson_4/DoSomeFavor/DoSomeFavor';
-import LessonOne from './Lessons/Lesson_1/LessonOne';
-import LessonTwo from './Lessons/Lesson_2/LessonTwo';
 import LessonTree from './Lessons/Lesson_3/LessonTree';
 import LessonFour from './Lessons/Lesson_4/LessonFour';
 import LessonFive from './Lessons/Lesson_5/LessonFive';
@@ -44,7 +32,6 @@ import { urlDoSomethingWhileDoOtherThing, urlRememberWhatYouWhereDoing, urlTrans
 import DoSomethingWhileDoOtherThing from './Lessons/Lesson_8/DoSomethingWhileDoOtherThing/DoSomethingWhileDoOtherThing';
 import RememberWhatYouWhereDoing from './Lessons/Lesson_8/RememberWhatYouWhereDoing/RememberWhatYouWhereDoing';
 import TransitiveVerbs from './Lessons/Lesson_8/TransitiveVerbs/TransitiveVerbs';
-import ImperativeForm from './Lessons/Lesson_1/ImperativeForm/ImperativeForm';
 import routes from './routes';
 
 const useStyles = makeStyles(theme => ({
@@ -97,9 +84,6 @@ export default function App() {
                 {routes.map((route, index) => {
                     return <Route key={index} exact path={route.route} component={route.component} />
                 })}
-                <Route exact path='/lesson3' component={LessonTree} />
-                <Route exact path={urlLooksLike} component={LooksLike} />
-                <Route exact path={urlNegativeAnswer} component={NegativeAnswer} />
                 <Route exact path='/lesson4' component={LessonFour} />
                 <Route exact path={urlSomeoneDoesSomethingForUs} component={DoesSomethingForSomeone} />
                 <Route exact path={urlDoSomeFavor} component={DoSomeFavor} />
