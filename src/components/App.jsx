@@ -3,11 +3,6 @@ import { Route } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, makeStyles, Button, Link } from '@material-ui/core';
 import history from '../history';
 import LandingPage from './LandingPage';
-import LessonSix from './Lessons/Lesson_6/LessonSix';
-import { urlConfirm, urlDoSomethingForSomeone, urlThingsWeThinkWillDOInTheFuture } from './Lessons/Lesson_6/topics_list';
-import Confirm from './Lessons/Lesson_6/Confirm/Confirm';
-import DoSomethingForSomeone from './Lessons/Lesson_6/DoSomethingForSomeone/DoSomethingForSomeone';
-import ThingsWeThinkWillDoInTheFuture from './Lessons/Lesson_6/ThingsWeThinkWillDoInTheFuture/ThingsWeThinkWillDoInTheFuture';
 import LessonSeven from './Lessons/Lesson_7/LessonSeven';
 import { urlDifferingResults, urlExpressFeelings, urlNotBeSureOfSomething, urlWishSomeoneToDoSomething } from './Lessons/Lesson_7/topics_list';
 import DifferingResults from './Lessons/Lesson_7/DifferingResults/DifferingResults';
@@ -71,10 +66,6 @@ export default function App() {
                 {routes.map((route, index) => {
                     return <Route key={index} exact path={route.route} component={route.component} />
                 })}
-                <Route exact path='/lesson6' component={LessonSix} />
-                <Route exact path={urlConfirm} component={Confirm} />
-                <Route exact path={urlDoSomethingForSomeone} component={DoSomethingForSomeone} />
-                <Route exact path={urlThingsWeThinkWillDOInTheFuture} component={ThingsWeThinkWillDoInTheFuture} />
                 <Route exact path='/lesson7' component={LessonSeven} />
                 <Route exact path={urlNotBeSureOfSomething} component={NotBeSureOfSomething} />
                 <Route exact path={urlDifferingResults} component={DifferingResults} />
