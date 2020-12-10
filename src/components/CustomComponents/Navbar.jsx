@@ -1,6 +1,8 @@
-import { AppBar, Button, makeStyles, Toolbar, Typography, Link } from '@material-ui/core'
-import React from 'react';
+import { AppBar, Button, makeStyles, Toolbar, Typography, Link, Hidden, Drawer, List, ListItem, ListItemText } from '@material-ui/core'
+import React, { useState } from 'react';
 import history from '../../history';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const useStyles = makeStyles(theme => ({
     navTitle: {
@@ -37,6 +39,7 @@ const urls = [
 
 export default function Navbar() {
     const classes = useStyles();
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <AppBar style={{ background: '#003459' }} position='static'>
             <Toolbar>
@@ -45,11 +48,30 @@ export default function Navbar() {
                         <Link color='inherit' underline='none' onClick={() => history.push('/')} >Sexto Nivel</Link>
                     </Typography>
                 </div>
-                <div className={classes.sectionDesktop}>
-                    {urls.map((url, index) => {
-                        return <Button key={index} onClick={() => history.push(url.url)} className={classes.navButton} color="inherit">{url.name}</Button>
-                    })}
-                </div>
+                <Hidden mdDown>
+                    <div className={classes.sectionDesktop}>
+                        {urls.map((url, index) => {
+                            return <Button key={index} onClick={() => history.push(url.url)} className={classes.navButton} color="inherit">{url.name}</Button>
+                        })}
+                    </div>
+                </Hidden>
+                <Hidden mdUp>
+                    <FontAwesomeIcon icon={faBars} onClick={() => setIsOpen(true)} />
+                    <Drawer open={isOpen} anchor='top' onClose={() => setIsOpen(false)}>
+                        <List>
+                            {urls.map((url, index) => {
+                                return (
+                                    <ListItem key={index} >
+                                        <ListItemText primary={url.name} onClick={() => {
+                                            history.push(url.url);
+                                            setIsOpen(false);
+                                        }} />
+                                    </ListItem>
+                                )
+                            })}
+                        </List>
+                    </Drawer>
+                </Hidden>
             </Toolbar>
         </AppBar>
     )
