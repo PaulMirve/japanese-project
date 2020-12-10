@@ -10,7 +10,7 @@ export default function Topic({ name, description, grammar = () => { }, examples
     });
     return (
         <Grid container direction='column'>
-            <p className={classes.title}>{name}</p>
+            <p style={{ marginTop: '-10px' }} className={classes.title}>{name}</p>
             <Divider />
             <p className={classes.description}>{description}</p>
             <p className={classes.subtitle}>Grámatica</p>

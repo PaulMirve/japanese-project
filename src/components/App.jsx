@@ -14,12 +14,24 @@ import RememberWhatYouWhereDoing from './Lessons/Lesson_8/RememberWhatYouWhereDo
 import TransitiveVerbs from './Lessons/Lesson_8/TransitiveVerbs/TransitiveVerbs';
 import routes from './routes';
 import Navbar from './CustomComponents/Navbar';
+import Footer from './CustomComponents/Footer';
+import { makeStyles } from '@material-ui/core';
+
+const useStyle = makeStyles(theme => ({
+    container: {
+        [theme.breakpoints.down('md')]: {
+            padding: theme.spacing(10, 4, 60, 4)
+        },
+        padding: theme.spacing(10, 4, 40, 4)
+    }
+}));
 
 export default function App() {
+    const classes = useStyle();
     return (
         <>
             <Navbar />
-            <div style={{ paddingLeft: 40, paddingRight: 40, paddingTop: 10, paddingBottom: 10 }}>
+            <div className={classes.container}>
                 <Route exact path='/' component={LandingPage} />
                 {routes.map((route, index) => {
                     return <Route key={index} exact path={route.route} component={route.component} />
@@ -34,6 +46,7 @@ export default function App() {
                 <Route exact path={urlRememberWhatYouWhereDoing} component={RememberWhatYouWhereDoing} />
                 <Route exact path={urlTransitiveVerbs} component={TransitiveVerbs} />
             </div>
+            <Footer />
         </>
     )
 }

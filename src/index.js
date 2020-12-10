@@ -14,7 +14,7 @@ import 'normalize.css';
  * #00A8E8
  */
 
-document.body.style = 'background: #ffffff; font-family: Roboto, sans- serif';
+document.body.style = 'background: #ffffff; font-family: Roboto, sans- serif; position: relative; min-height: 100vh';
 
 ReactDOM.render(
   <React.StrictMode>

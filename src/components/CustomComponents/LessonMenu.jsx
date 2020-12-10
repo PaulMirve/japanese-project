@@ -5,7 +5,7 @@ import history from '../../history';
 const useStyles = makeStyles(themes => ({
     title: {
         fontSize: 40,
-        fontWeight: 100
+        fontWeight: 100,
     },
     btn: {
         textTransform: 'none',
@@ -13,6 +13,9 @@ const useStyles = makeStyles(themes => ({
         marginTop: 10,
         borderColor: '#00171F',
         color: '#00171F'
+    },
+    container: {
+        marginTop: 50
     }
 }));
 
@@ -23,7 +26,7 @@ export default function LessonMenu({ lessonName, topics }) {
         document.title = lessonName;
     });
     return (
-        <Grid container direction='column' alignContent='center'>
+        <Grid container direction='column' alignContent='center' className={classes.container}>
             <Typography align='center' className={classes.title}>{lessonName.toUpperCase()}</Typography>
             {topics.map((topic, index) => {
                 return (
