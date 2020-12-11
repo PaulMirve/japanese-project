@@ -15,7 +15,7 @@ export default function ImperativeForm() {
     const Grammar = () => {
         return (
             <>
-                <p className={classes.description}>Para verbos del grupo 1 la vocal /i/ de la forma-MASU se cambia por /e/. Verbos del grupo 2 se elimina -ます y se añade ろ. Se elimina -ます y se añade ろ. El verbo きます se convierte en こい.</p>
+                <p className={classes.description}>Para verbos del grupo 1 se quita el ます y la ultima sílaba antes del mas se cambia por su forma en /e/. Para verbos del grupo 2 se quita el ます y se agrega la sílaba ろ. Los verbos del grupo 3 する cambia por しろ y 来る por こい.</p>
                 <Grid container spacing={5}>
                     <Grid item xs={12} md={4}>
                         <VerbsCard title='Verbos del Grupo 1' verbs={positiveVerbs.groupOne} />
@@ -27,7 +27,7 @@ export default function ImperativeForm() {
                         <VerbsCard title='Verbos del Grupo 3' verbs={positiveVerbs.groupTree} />
                     </Grid>
                 </Grid>
-                <p className={classes.description}>Para la forma negativa se le agrega la silaba NA a la forma diccionario.</p>
+                <p className={classes.description}>Para utilizar la forma imperativa en negativo se utiliza la forma diccionario del verbo y se agrega la sílaba な.</p>
                 <Grid container spacing={5}>
                     <Grid item xs={12} md={4}>
                         <VerbsCard title='Verbos del Grupo 1' verbs={negativeVerbs.groupOne} />

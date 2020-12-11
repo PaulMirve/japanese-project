@@ -30,6 +30,13 @@ import DoSomethingForSomeone from "./Lessons/Lesson_6/DoSomethingForSomeone/DoSo
 import LessonSix from "./Lessons/Lesson_6/LessonSix";
 import ThingsWeThinkWillDoInTheFuture from "./Lessons/Lesson_6/ThingsWeThinkWillDoInTheFuture/ThingsWeThinkWillDoInTheFuture";
 import { urlConfirm, urlDoSomethingForSomeone, urlThingsWeThinkWillDOInTheFuture } from "./Lessons/Lesson_6/topics_list";
+import AskingForHelp from "./Lessons/Lesson_8/AskingForHelp/AskingForHelp";
+import DoSomethingWhileDoOtherThing from "./Lessons/Lesson_8/DoSomethingWhileDoOtherThing/DoSomethingWhileDoOtherThing";
+import IntransitiveVerbs from "./Lessons/Lesson_8/IntransitiveVerbs/IntransitiveVerbs";
+import LessonEight from "./Lessons/Lesson_8/LessonEight";
+import RememberWhatYouWhereDoing from "./Lessons/Lesson_8/RememberWhatYouWhereDoing/RememberWhatYouWhereDoing";
+import { urlAskingForHelp, urlDoSomethingWhileDoOtherThing, urlIntransitiveVerbs, urlRememberWhatYouWhereDoing, urlTransitiveVerbs } from "./Lessons/Lesson_8/topics_list";
+import TransitiveVerbs from "./Lessons/Lesson_8/TransitiveVerbs/TransitiveVerbs";
 import LessonNine from "./Lessons/Lesson_9/LessonNine";
 
 const rutas = [
@@ -59,6 +66,12 @@ const rutas = [
     { route: urlDoSomethingForSomeone, component: DoSomethingForSomeone },
     { route: urlConfirm, component: Confirm },
     { route: urlThingsWeThinkWillDOInTheFuture, component: ThingsWeThinkWillDoInTheFuture },
+    { route: '/lesson8', component: LessonEight },
+    { route: urlDoSomethingWhileDoOtherThing, component: DoSomethingWhileDoOtherThing },
+    { route: urlRememberWhatYouWhereDoing, component: RememberWhatYouWhereDoing },
+    { route: urlTransitiveVerbs, component: TransitiveVerbs },
+    { route: urlIntransitiveVerbs, component: IntransitiveVerbs },
+    { route: urlAskingForHelp, component: AskingForHelp },
     { route: '/lesson9', component: LessonNine },
 ];
 export default rutas;
