@@ -9,6 +9,8 @@ export const nameIntransitiveVerbs = 'Verbos Intransitivos';
 export const urlIntransitiveVerbs = '/intransitive-verbs';
 export const nameAskingForHelp = 'Pedir ayuda';
 export const urlAskingForHelp = '/asking-for-help';
+export const nameIndirectInformation = 'Transmitir información indirecta';
+export const urlIndirectInformation = '/indirect-information';
 
 const topics = [
     new Topic(nameDoSomethingWhileDoOtherThing, urlDoSomethingWhileDoOtherThing),
@@ -16,5 +18,6 @@ const topics = [
     new Topic(nameTransitiveVerbs, urlTransitiveVerbs),
     new Topic(nameIntransitiveVerbs, urlIntransitiveVerbs),
     new Topic(nameAskingForHelp, urlAskingForHelp),
+    new Topic(nameIndirectInformation, urlIndirectInformation),
 ];
 export default topics;

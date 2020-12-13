@@ -38,10 +38,11 @@ import { urlDifferingResults, urlExpressFeelings, urlNotBeSureOfSomething, urlWi
 import WishSomeoneToDoSomethting from "./Lessons/Lesson_7/WishSomeoneToDoSomething/WishSomeoneToDoSomethting";
 import AskingForHelp from "./Lessons/Lesson_8/AskingForHelp/AskingForHelp";
 import DoSomethingWhileDoOtherThing from "./Lessons/Lesson_8/DoSomethingWhileDoOtherThing/DoSomethingWhileDoOtherThing";
+import IndirectInformation from "./Lessons/Lesson_8/IndirectInformation/IndirectInformation";
 import IntransitiveVerbs from "./Lessons/Lesson_8/IntransitiveVerbs/IntransitiveVerbs";
 import LessonEight from "./Lessons/Lesson_8/LessonEight";
 import RememberWhatYouWhereDoing from "./Lessons/Lesson_8/RememberWhatYouWhereDoing/RememberWhatYouWhereDoing";
-import { urlAskingForHelp, urlDoSomethingWhileDoOtherThing, urlIntransitiveVerbs, urlRememberWhatYouWhereDoing, urlTransitiveVerbs } from "./Lessons/Lesson_8/topics_list";
+import { urlAskingForHelp, urlDoSomethingWhileDoOtherThing, urlIndirectInformation, urlIntransitiveVerbs, urlRememberWhatYouWhereDoing, urlTransitiveVerbs } from "./Lessons/Lesson_8/topics_list";
 import TransitiveVerbs from "./Lessons/Lesson_8/TransitiveVerbs/TransitiveVerbs";
 import LessonNine from "./Lessons/Lesson_9/LessonNine";
 
@@ -83,6 +84,7 @@ const rutas = [
     { route: urlTransitiveVerbs, component: TransitiveVerbs },
     { route: urlIntransitiveVerbs, component: IntransitiveVerbs },
     { route: urlAskingForHelp, component: AskingForHelp },
+    { route: urlIndirectInformation, component: IndirectInformation },
     { route: '/lesson9', component: LessonNine },
 ];
 export default rutas;
