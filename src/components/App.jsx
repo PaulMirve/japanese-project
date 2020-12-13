@@ -1,12 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import LandingPage from './LandingPage';
-import LessonSeven from './Lessons/Lesson_7/LessonSeven';
-import { urlDifferingResults, urlExpressFeelings, urlNotBeSureOfSomething, urlWishSomeoneToDoSomething } from './Lessons/Lesson_7/topics_list';
-import DifferingResults from './Lessons/Lesson_7/DifferingResults/DifferingResults';
-import ExpressFeeling from './Lessons/Lesson_7/ExpressFeeling/ExpressFeeling';
-import WishSomeoneToDoSomethting from './Lessons/Lesson_7/WishSomeoneToDoSomething/WishSomeoneToDoSomethting';
-import NotBeSureOfSomething from './Lessons/Lesson_7/NotBeSureOfSomething/NotBeSureOfSomething';
 import routes from './routes';
 import Navbar from './CustomComponents/Navbar';
 import Footer from './CustomComponents/Footer';
@@ -31,11 +25,6 @@ export default function App() {
                 {routes.map((route, index) => {
                     return <Route key={index} exact path={route.route} component={route.component} />
                 })}
-                <Route exact path='/lesson7' component={LessonSeven} />
-                <Route exact path={urlNotBeSureOfSomething} component={NotBeSureOfSomething} />
-                <Route exact path={urlDifferingResults} component={DifferingResults} />
-                <Route exact path={urlExpressFeelings} component={ExpressFeeling} />
-                <Route exact path={urlWishSomeoneToDoSomething} component={WishSomeoneToDoSomethting} />
             </div>
             <Footer />
         </>

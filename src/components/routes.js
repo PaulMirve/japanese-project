@@ -30,6 +30,12 @@ import DoSomethingForSomeone from "./Lessons/Lesson_6/DoSomethingForSomeone/DoSo
 import LessonSix from "./Lessons/Lesson_6/LessonSix";
 import ThingsWeThinkWillDoInTheFuture from "./Lessons/Lesson_6/ThingsWeThinkWillDoInTheFuture/ThingsWeThinkWillDoInTheFuture";
 import { urlConfirm, urlDoSomethingForSomeone, urlThingsWeThinkWillDOInTheFuture } from "./Lessons/Lesson_6/topics_list";
+import DifferingResults from "./Lessons/Lesson_7/DifferingResults/DifferingResults";
+import ExpressFeeling from "./Lessons/Lesson_7/ExpressFeeling/ExpressFeeling";
+import LessonSeven from "./Lessons/Lesson_7/LessonSeven";
+import NotBeSureOfSomething from "./Lessons/Lesson_7/NotBeSureOfSomething/NotBeSureOfSomething";
+import { urlDifferingResults, urlExpressFeelings, urlNotBeSureOfSomething, urlWishSomeoneToDoSomething } from "./Lessons/Lesson_7/topics_list";
+import WishSomeoneToDoSomethting from "./Lessons/Lesson_7/WishSomeoneToDoSomething/WishSomeoneToDoSomethting";
 import AskingForHelp from "./Lessons/Lesson_8/AskingForHelp/AskingForHelp";
 import DoSomethingWhileDoOtherThing from "./Lessons/Lesson_8/DoSomethingWhileDoOtherThing/DoSomethingWhileDoOtherThing";
 import IntransitiveVerbs from "./Lessons/Lesson_8/IntransitiveVerbs/IntransitiveVerbs";
@@ -66,6 +72,11 @@ const rutas = [
     { route: urlDoSomethingForSomeone, component: DoSomethingForSomeone },
     { route: urlConfirm, component: Confirm },
     { route: urlThingsWeThinkWillDOInTheFuture, component: ThingsWeThinkWillDoInTheFuture },
+    { route: '/lesson7', component: LessonSeven },
+    { route: urlWishSomeoneToDoSomething, component: WishSomeoneToDoSomethting },
+    { route: urlExpressFeelings, component: ExpressFeeling },
+    { route: urlNotBeSureOfSomething, component: NotBeSureOfSomething },
+    { route: urlDifferingResults, component: DifferingResults },
     { route: '/lesson8', component: LessonEight },
     { route: urlDoSomethingWhileDoOtherThing, component: DoSomethingWhileDoOtherThing },
     { route: urlRememberWhatYouWhereDoing, component: RememberWhatYouWhereDoing },

@@ -1,5 +1,5 @@
 import Topic from '../../../models/Topic';
-export const nameNotBeSureOfSomething = 'Expresar algo de lo que no estamos seguros';
+export const nameNotBeSureOfSomething = 'Expresar la posibilidad de que algo suceda';
 export const urlNotBeSureOfSomething = '/not-be-sure-of-something';
 export const nameDifferingResults = 'Expresar que algo no es como esperabamos';
 export const urlDifferingResults = '/differing-results';

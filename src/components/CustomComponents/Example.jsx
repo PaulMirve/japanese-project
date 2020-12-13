@@ -1,7 +1,7 @@
 import { Grid, makeStyles, Typography } from '@material-ui/core'
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faVolumeUp } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const useStyles = makeStyles(theme => ({
     arrowIcon: {
@@ -26,7 +26,7 @@ export default function Example({ example, translation, audio }) {
     const { first, highlight, second, secondHighlight, third } = example;
     return (
         <Grid className={classes.container} container>
-            <Grid item xs={11}>
+            <Grid item xs={12}>
                 <div style={{ display: 'flex' }}>
                     <Typography>{first}</Typography>
                     <Typography className={classes.highlight}>{highlight}</Typography>
@@ -36,9 +36,6 @@ export default function Example({ example, translation, audio }) {
                     <FontAwesomeIcon className={classes.arrowIcon} icon={faArrowRight} />
                     {translation}
                 </div>
-            </Grid>
-            <Grid item xs={1}>
-                <FontAwesomeIcon icon={faVolumeUp} />
             </Grid>
         </Grid>
     )
