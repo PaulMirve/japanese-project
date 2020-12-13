@@ -44,7 +44,11 @@ import LessonEight from "./Lessons/Lesson_8/LessonEight";
 import RememberWhatYouWhereDoing from "./Lessons/Lesson_8/RememberWhatYouWhereDoing/RememberWhatYouWhereDoing";
 import { urlAskingForHelp, urlDoSomethingWhileDoOtherThing, urlIndirectInformation, urlIntransitiveVerbs, urlRememberWhatYouWhereDoing, urlTransitiveVerbs } from "./Lessons/Lesson_8/topics_list";
 import TransitiveVerbs from "./Lessons/Lesson_8/TransitiveVerbs/TransitiveVerbs";
+import CompareActions from "./Lessons/Lesson_9/CompareActions/CompareActions";
 import LessonNine from "./Lessons/Lesson_9/LessonNine";
+import ThingsWeAreCapableOf from "./Lessons/Lesson_9/ThingsWeAreCapableOf/ThingsWeAreCapableOf";
+import ThingsWeWantToDoInTheFuture from "./Lessons/Lesson_9/ThingsWeWantToDoInTheFuture/ThingsWeWantToDoInTheFuture";
+import { urlCompareActions, urlThingsWeAreCapableOf, urlThingsWeWantToDoInTheFuture } from "./Lessons/Lesson_9/topics_list";
 
 const rutas = [
     { route: '/lesson1', component: LessonOne },
@@ -86,5 +90,8 @@ const rutas = [
     { route: urlAskingForHelp, component: AskingForHelp },
     { route: urlIndirectInformation, component: IndirectInformation },
     { route: '/lesson9', component: LessonNine },
+    { route: urlThingsWeWantToDoInTheFuture, component: ThingsWeWantToDoInTheFuture },
+    { route: urlThingsWeAreCapableOf, component: ThingsWeAreCapableOf },
+    { route: urlCompareActions, component: CompareActions },
 ];
 export default rutas;
