@@ -18,6 +18,6 @@ export default function DoesSomethingForSomeone() {
             </>
         );
     }
-    const description = 'Esta forma sirve para expresar una acción que alguién ha hecho por nosotros o un favor que hemos recibido. Cuando usamos esta forma el sujeto es el que tiene la importancia.';
+    const description = 'Esta forma sirve para expresar una acción que alguien ha hecho por nosotros o un favor que hemos recibido. Cuando usamos esta forma el sujeto es el que tiene la importancia.';
     return <Topic name={nameSomeoneDoesSomethingForUs} grammar={Grammar} description={description} examples={examples} />
 }

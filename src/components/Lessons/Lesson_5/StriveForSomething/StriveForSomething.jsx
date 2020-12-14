@@ -31,6 +31,6 @@ export default function StriveForSomething() {
             </>
         );
     }
-    const description = 'Podmeos usar la forma ように con diferentes propositos como decir algo por lo que nos hemos esforzado, una nueva habilidad que hemos adquirido o explicar una acción que estamos haciendo para alcanzar o realizar algo.';
+    const description = 'Podemos usar la forma ように con diferentes propósitos como decir algo por lo que nos hemos esforzado, una nueva habilidad que hemos adquirido o explicar una acción que estamos haciendo para alcanzar o realizar algo.';
     return <Topic name={nameStriveForSomething} grammar={Grammar} description={description} examples={examples} />
 }

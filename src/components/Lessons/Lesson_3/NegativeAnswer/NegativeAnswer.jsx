@@ -12,12 +12,12 @@ export default function NegativeAnswer() {
             <>
                 <div className={classes.grammarContainer}>
                     <Typography align='center' className={classes.description}>
-                        Adj. イ／ナ en forma ない cuando hacemos una pregunta.
+                        Adjetivo イ／ナ en forma ない cuando hacemos una pregunta.
                 </Typography>
                 </div>
             </>
         );
     }
-    const descripcion = 'Nos sirve para hacer preguntas en negativos y reafirmar aspectos de la pregunta.';
+    const descripcion = 'Nos sirve para hacer preguntas en negativo y reafirmar aspectos de la pregunta.';
     return <Topic name={nameNegativeAnswer} grammar={Grammar} description={descripcion} examples={examples} />
 }

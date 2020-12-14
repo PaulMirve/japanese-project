@@ -15,7 +15,7 @@ export default function NotBeSureOfSomething() {
                 </p>
                 <div className={classes.grammarContainer}>
                     <GrammarLesson>
-                        Verbo en forma diccionario + かもしれません。/ Adjetivo い + かもしれません。/adjetivo　な + かもしれません。
+                        Verbo en forma diccionario/Adjetivo い/Adjetivo な + かもしれません。
                     </GrammarLesson>
                 </div>
             </>

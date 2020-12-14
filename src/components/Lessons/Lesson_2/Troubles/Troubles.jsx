@@ -15,6 +15,6 @@ export default function Troubles() {
         );
     }
 
-    const description = 'Podemos señalar que tenemos problemas con algo o que algo no nos agrado usando けど al final de una oración.';;
+    const description = 'Podemos señalar que tenemos problemas con algo o que algo no nos agradó usando けど al final de una oración.';;
     return <Topic name='Transmitir algún poblema' grammar={Grammar} description={description} examples={examples} />
 }

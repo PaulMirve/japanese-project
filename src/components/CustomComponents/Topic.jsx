@@ -13,7 +13,7 @@ export default function Topic({ name, description, grammar = () => { }, examples
             <p style={{ marginTop: '-10px' }} className={classes.title}>{name}</p>
             <Divider />
             <p className={classes.description}>{description}</p>
-            <p className={classes.subtitle}>Grámatica</p>
+            <p className={classes.subtitle}>Gramática</p>
             <Divider />
             {grammar()}
             {examples ?

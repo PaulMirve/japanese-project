@@ -12,7 +12,7 @@ export default function Conditional() {
     const Grammar = () => {
         return (
             <>
-                <p className={grammar.description}>Para verbos del grupo 1 se cambia la ultima sílaba antes del ます por su forma /e/. Para verbos del grupo 2 se cambia el masu por れば。Los verbos del grupo 3 se utiliza できれば　y すれば。</p>
+                <p className={grammar.description}>Para verbos del grupo 1 se cambia la ultima sílaba antes del ます por su forma /e/. Para verbos del grupo 2 se cambia el ます por れば。Los verbos del grupo 3 se utiliza できれば　y すれば。</p>
                 <Grid container spacing={5}>
                     <Grid item xs={12} md={4}>
                         <VerbsCard title='Verbos del Grupo 1' verbs={verbs.groupOne} />

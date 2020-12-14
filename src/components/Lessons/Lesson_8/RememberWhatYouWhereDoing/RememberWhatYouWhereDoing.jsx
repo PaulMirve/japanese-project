@@ -26,7 +26,7 @@ export default function RememberWhatYouWhereDoing() {
             </>
         );
     }
-    const description = 'Se trata de diferenciar el uso del estilo formal y el estilo informal (ver L4 y L5). En esta lección, distinguimos entre el estilo informal, que utilizamos cuando nos decimos a nosotros mismos lo que pensamos o sentimos en' +
-        'lugar de a otras personas, y el estilo formal, que usamos cuando nos dirigimos a alguien';
+    const description = 'Se trata de diferenciar el uso del estilo formal y el estilo informal. En esta lección, distinguimos entre el estilo informal, que utilizamos cuando nos decimos a nosotros mismos lo que pensamos o sentimos en' +
+        ' lugar de a otras personas, y el estilo formal, que usamos cuando nos dirigimos a alguien';
     return <Topic name={nameRememberWhatYouWhereDoing} grammar={Grammar} description={description} examples={examples} />
 }

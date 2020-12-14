@@ -12,8 +12,8 @@ export default function EvenThough() {
         return (
             <>
                 <div className={classes.grammarContainer}>
-                    <Typography align='center' className={classes.description}>Adejtivo いーく　＋　ても/なくても</Typography>
-                    <Typography align='center' className={classes.description}>Adejtivo な　＋　でも/じゃなくても</Typography>
+                    <Typography align='center' className={classes.description}>Adjetivo いーく　＋　ても/なくても</Typography>
+                    <Typography align='center' className={classes.description}>Adjetivo な　＋　でも/じゃなくても</Typography>
                 </div>
             </>
         )
