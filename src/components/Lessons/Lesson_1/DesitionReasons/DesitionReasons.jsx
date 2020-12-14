@@ -11,11 +11,11 @@ export default function DesitionReasons() {
     const Grammar = () => {
         return (
             <div className={classes.grammarContainer}>
-                <Typography align='center' className={classes.description}>Motivo de la desición + から + resultado de la desición</Typography>
+                <Typography align='center' className={classes.description}>Motivo de la decisión + から + resultado de la decisión</Typography>
             </div>
         );
     }
 
-    const description = 'Podemos señalar el motivo de una descición utilizando esta forma.';
+    const description = 'Podemos señalar el motivo de una decisión utilizando esta forma.';
     return <Topic name={nameDesitionReasons} grammar={Grammar} description={description} examples={examples} />
 }

@@ -11,10 +11,10 @@ export default function SustantivateAdjective() {
     const Grammar = () => {
         return (
             <>
-                <p className={classes.description}>En caso de ser un adejtivo い se remueve la い y se agrega さ al final. Para adejtivos な se remueve la な y se agrega さ. Para verbos se quita el ます.</p>
+                <p className={classes.description}>En caso de ser un adjetivo い se remueve la い y se agrega さ al final. Para adejtivos な se remueve la な y se agrega さ. Para verbos se quita el ます.</p>
                 <div className={classes.grammarContainer}>
-                    <GrammarLesson>Adejtivo い　+ さ</GrammarLesson>
-                    <GrammarLesson>Adejtivo な　+ さ</GrammarLesson>
+                    <GrammarLesson>Adjetivo い　+ さ</GrammarLesson>
+                    <GrammarLesson>Adjetivo な　+ さ</GrammarLesson>
                     <GrammarLesson>Verbo　+ <strike>ます</strike></GrammarLesson>
                 </div>
                 <AdjectivesBoxes IAdjectives={examples.iAdjectives} NaAdjectives={examples.naAdjectives} verbs={examples.verbs} />
@@ -22,6 +22,6 @@ export default function SustantivateAdjective() {
         );
     }
 
-    const description = 'Pra convertir sustantivos y verbos a sustantivo utilizamos esta forma.';
+    const description = 'Para convertir sustantivos y verbos a sustantivo utilizamos esta forma.';
     return <Topic name={nameSustantivateAdjectives} grammar={Grammar} description={description} />
 }
