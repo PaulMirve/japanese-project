@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Grid, Button, makeStyles, Hidden } from '@material-ui/core';
 import history from '../history';
-import imagen from '../static/img/study_school_jugyou_man.png';
+import imagen from '../static/img/jpfinal.jpg';
 
 const useStyles = makeStyles(theme => ({
     imgContainer: {

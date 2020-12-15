@@ -15,7 +15,7 @@ export default function DoSomethingForSomeone() {
                     <GrammarLesson> Verbo en forma て ＋ あげます</GrammarLesson>
                 </div>
                 <p className={classes.description}>
-                    Se pueden utilizar derivaciones para indicar se utiliza para indicar el deseo de ayudar:
+                    Se pueden utilizar derivaciones para indicar el deseo de ayudar:
                  </p>
                 <div className={classes.grammarContainer}>
                     <GrammarLesson> forma て ＋ あげたいです</GrammarLesson>

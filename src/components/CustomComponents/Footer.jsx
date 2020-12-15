@@ -1,7 +1,5 @@
 import { Grid, Link, makeStyles, Typography } from '@material-ui/core'
 import React from 'react';
-// import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const useStyle = makeStyles(theme => ({
     footer: {
@@ -30,7 +28,7 @@ const useStyle = makeStyles(theme => ({
     iconsContainer: {
         display: 'flex',
         justifyContent: 'space-evenly',
-        [theme.breakpoints.down('md')]:{
+        [theme.breakpoints.down('md')]: {
             padding: theme.spacing(1, 10, 1, 10),
         },
         padding: theme.spacing(5, 30, 5, 30),
@@ -48,10 +46,9 @@ export default function Footer() {
                     <div className={classes.contributors}>
                         Código del página hecho por Paul Miranda
                     </div>
-                    {/* <div className={classes.iconsContainer}>
-                        <FontAwesomeIcon icon={faGithub} />
-                        <FontAwesomeIcon icon={faLinkedin} />
-                    </div> */}
+                    <div className={classes.contributors}>
+                        Arte por Nahomi Baez
+                    </div>
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <Typography align='center'>Información reunida por:</Typography>
