@@ -12,3 +12,8 @@ This project is built with **React** and **MaterialUI** for the interface compon
     { example: { first: 'キムさんは、お父さんが入院して、', highlight: '心配', second: '', secondHighlight: 'でしょうね。', third: '' }, translation: 'Kim estará preocupada porque su padre ha sido hospitalizado,¿cierto?' }
     ];
 Where *example* is the current example to show, each example with  its  own set of highlights to remark the most important part of the grammar of the current example, and finally the *translation* value, which  is the translated sentence to represent.
+
+# Photos
+![image](https://user-images.githubusercontent.com/47708181/137222792-b895ed44-c16d-494a-a77d-f3fb31a4e8e2.png)
+![image](https://user-images.githubusercontent.com/47708181/137222825-30609df7-2e75-46d7-8f24-99c6ba716252.png)
+![image](https://user-images.githubusercontent.com/47708181/137222859-7bb46b4a-8970-4c40-8d9b-8203e7c30a14.png)
